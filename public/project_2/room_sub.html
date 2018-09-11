@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>해비치_호텔_포폴</title>
+    <link href="css/roomstyle.css" rel="stylesheet">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function(e){
+            $(".gnb1").mouseenter(function(){//nav요소에 mouseenter이벤트 생성
+                $(this).find(".sub1").stop().slideDown();//.sub에 슬라이드 다운 메서드적용
+            });
+            $(".gnb1").mouseleave(function(){
+                $(this).find(".sub1").stop().slideUp();//.sub에 슬라이드업 메서드 적용
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="wrap">
+            <div class="loginbox">
+                <div class="login">
+                    <a href="#">login</a>
+                </div>
+                <select class="language">
+					<option>Language</option>
+					<option>한국어</option>
+					<option>日本語</option>
+					<option>中文</option>
+					<option>English</option>
+				</select>
+            </div>
+            <div class="img"><a href="index.html"><img src="img/haevichi_logo1w.png" alt="logo"></a></div>
+            <div class="txt">
+                <div>
+                    <a href="room_sub.html" class="rooms">ROOMS</a>
+                    <a href="room_sub.html" class="rooms krtxt">객실</a>
+                </div>
+                <div>
+                    <a href="dining_sub.html" class="dining">DINING</a>
+                    <a href="dining_sub.html" class="dining krtxt">다이닝</a>
+                </div>
+                <div>
+                    <a href="leisure&relaxation_sub.html" class="leisure">LEISURE & RELAXATION</a>
+                    <a href="leisure&relaxation_sub.html" class="leisure krtxt">여가 & 휴식</a>
+                </div>
+                <div>
+                    <a href="meeing&banquet.html" class="meeting">MEETING & BANQUET</a>
+                    <a href="meeing&banquet.html" class="meeting krtxt">미팅 & 연회</a>
+                </div>
+                <div>
+                    <a href="facilities.html" class="facilities">FACILITIES</a>
+                    <a href="facilities.html" class="facilities krtxt">부대시설</a>
+                </div>
+                <div>
+                    <a href="" class="specialoffers"><b>Special offers</b></a>
+                    <a href="" class="specialofferskr krtxt"><b>스폐셜 오더</b></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="downnav">
+            <ul class="gnb">
+                <li >
+                    <a href=""><em>ROOM</em></a>
+                </li>
+                <li class="gnb1">
+                    <a href=""><em>HOTEL ROOM</em></a>
+                    <ul class="sub1">
+                        <li><a href=""><em>RESORT ROOMS</em></a></li>
+                    </ul>
+                </li>
+                <li class="gnb1">
+                    <a href=""><em>ALL</em></a>
+                    <ul class="sub1">
+                        <li><a href=""><em>Superior</em></a></li>
+                        <li><a href=""><em>Ondol</em></a></li>
+                        <li><a href=""><em>Deluxe</em></a></li>
+                        <li><a href=""><em>Executive</em></a></li>
+                        <li><a href=""><em>Ondol suite</em></a></li>
+                        <li><a href=""><em>Deluxe Suite</em></a></li>
+                        <li><a href=""><em>Family Suite</em></a></li>
+                        <li><a href=""><em>Ocean Suite</em></a></li>
+                        <li><a href=""><em>Haevichi Suite</em></a></li>
+                        <li><a href=""><em>Royal Suite</em></a></li>
+                        <li><a href=""><em>Presidential Suite</em></a></li>
+                        <li><a href=""><em>Honors G space</em></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="rooms">
+            <div class="hotelroomtext">
+                <h1>Hotel Rooms 호텔 객실</h1>
+            </div>
+            <div class="hotelroomsimg">
+                <div class="roomsimg1">
+                    <a href=""><img src="img/room1.jpg"></a>
+                    <p>Superior 수페리어</p>
+                </div>
+                <div class="roomsimg2">
+                    <a href=""><img src="img/room2.jpg"></a>
+                    <p>Ondol 온돌</p>
+                </div>
+                <div class="roomsimg3">
+                    <a href=""><img src="img/room3.jpg"></a>
+                    <p>Deluxe 디럭스</p>
+                </div>
+                <div class="roomsimg4">
+                    <a href=""><img src="img/room4.jpg"></a>
+                    <p>Executive 이그제큐티브</p>
+                </div>
+                <div class="roomsimg5">
+                    <a href=""><img src="img/room5.jpg"></a>
+                    <p>Ondol 온돌 스위트 </p>
+                </div>
+                <div class="roomsimg6">
+                    <a href=""><img src="img/room6.jpg"></a>
+                    <p>Deluxe Suite 디럭스 스위트</p>
+                </div>
+                <div class="roomsimg7">
+                    <a href=""><img src="img/room7.jpg"></a>
+                    <p>Family Suite 패밀리 스위트</p>
+                </div>
+                <div class="roomsimg8">
+                    <a href=""><img src="img/room8.jpg"></a>
+                    <p>Ocean Suite 오션 스위트</p>
+                </div>
+                <div class="roomsimg9">
+                    <a href=""><img src="img/room9.jpg"></a>
+                    <p>Havichi Suite 해비치 스위트</p>
+                </div>
+                <div class="roomsimg10">
+                    <a href=""><img src="img/room10.jpg"></a>
+                    <p>Royal Suite 로얄 스위트</p>
+                </div>
+                <div class="roomsimg11">
+                    <a href=""><img src="img/room11.jpg"></a>
+                    <p>Presidential Suite 프레지던셜 스위트</p>
+                </div>
+                <div class="roomsimg11">
+                    <a href=""><img src="img/room12.jpg"></a>
+                    <p>Honors G Space 아너스 지 스페이스</p>
+                </div>
+            </div>
+            <div class="back">
+                <div class="button_base b09_electric">문의하기</div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footerbox">
+            <div class="icon">
+                <a href="">
+                    <img src="img/papericon.png" alt="개인정보 처리(취급)방침">
+                    <span>개인정보 처리(취급)방침</span>
+                </a>
+                <a href="">
+                    <img src="img/emailicon.png" alt="이메일무단 수집금지">
+                    <span>이메일무단 수집금지</span>
+                </a>
+                <a href="">
+                    <img src="img/naviicon.png" alt="Contact us">
+                    <span>Contact us</span>
+                </a>
+                <a href="">
+                    <img src="img/facebookicon.png" alt="Facebook">
+                    <span>Facebook</span>
+                </a>
+                <a href="">
+                    <img src="img/twiter.png" alt="Twiter">
+                    <span>Twiter</span>
+                </a>
+                <a href="">
+                    <img src="img/instargramicon.png" alt="Instargram">
+                    <span>Instargram</span>
+                </a>
+            </div>
+            <p>주소:제주특별자치도서귀포시 표선면 민속해안로 537(우:63629)<br> 대표전화 Tel.(064)780-8100 Fax.(064)780-8524 객실 예약 제주(064)780-8000 단체견적문의 (02)-3669-4731/sales@haevichi.com<br><br>
+                <b>copyright &copy; Haevichi hotels &#38; Resorlsco.LTd.all Rights Reserved.</b>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>해비치_호텔_포폴</title>
+    <link href="css/leisure&relaxationstyle.css" rel="stylesheet">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function(e) {
+            $(".gnb1").mouseenter(function() { //nav요소에 mouseenter이벤트 생성
+                $(this).find(".sub1").stop().slideDown(); //.sub에 슬라이드 다운 메서드적용
+            });
+            $(".gnb1").mouseleave(function() {
+                $(this).find(".sub1").stop().slideUp(); //.sub에 슬라이드업 메서드 적용
+            });
+            
+            /////////////////////////////////////////////
+            
+            
+            $(".camping a").click(function() {
+                var path = $(this).attr("href");
+                $(".camping a").removeClass("on")
+                $(this).addClass("on")
+                
+                $("#largeImg > img").attr("src", path);
+                $("#largeImg > img").css("opacity", 0).stop()
+                    .animate({
+                        "opacity": 1
+                    }, 1000);
+                return false;
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="wrap">
+            <div class="loginbox">
+                <div class="login">
+                    <a href="#">login</a>
+                </div>
+                <select class="language">
+					<option>Language</option>
+					<option>한국어</option>
+					<option>日本語</option>
+					<option>中文</option>
+					<option>English</option>
+				</select>
+            </div>
+            <div class="img"><a href="index.html"><img src="img/haevichi_logo1w.png" alt="logo"></a></div>
+            <div class="txt">
+                <div>
+                    <a href="room_sub.html" class="rooms">ROOMS</a>
+                    <a href="room_sub.html" class="rooms krtxt">객실</a>
+                </div>
+                <div>
+                    <a href="dining_sub.html" class="dining">DINING</a>
+                    <a href="dining_sub.html" class="dining krtxt">다이닝</a>
+                </div>
+                <div>
+                    <a href="leisure&relaxation_sub.html" class="leisure">LEISURE & RELAXATION</a>
+                    <a href="leisure&relaxation_sub.html" class="leisure krtxt">여가 & 휴식</a>
+                </div>
+                <div>
+                    <a href="meeing&banquet.html" class="meeting">MEETING & BANQUET</a>
+                    <a href="meeing&banquet.html" class="meeting krtxt">미팅 & 연회</a>
+                </div>
+                <div>
+                    <a href="facilities.html" class="facilities">FACILITIES</a>
+                    <a href="facilities.html" class="facilities krtxt">부대시설</a>
+                </div>
+                <div>
+                    <a href="" class="specialoffers"><b>Special offers</b></a>
+                    <a href="" class="specialofferskr krtxt"><b>스폐셜 오더</b></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="downnav">
+            <ul class="gnb">
+                <li>
+                    <a href=""><em>LEISURE&amp;RELAXATION</em></a>
+                </li>
+                <li class="gnb1">
+                    <a href=""><em>CAMP&amp;GRADEN</em></a>
+                    <ul class="sub1">
+                        <li><a href=""><em>Kids</em></a></li>
+                        <li><a href=""><em>Winter Garden</em></a></li>
+                        <li><a href=""><em>Activties</em></a></li>
+                        <li><a href=""><em>Spa</em></a></li>
+                        <li><a href=""><em>Life Styling</em></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="rooms">
+            <div class="hotelroomtext">
+                <h1>Byulvichi Camp 별비치 캠프</h1>
+            </div>
+            <div id="largeImg">
+                <img src="img/bcp1.jpg" alt="image1">
+            </div>
+            <div class="camping">
+                <a href="img/bcp1.jpg" title="image1" class="on">
+                <img src="img/scp1.jpg">
+                </a>
+                <a href="img/bcp2.jpg" title="image1">
+                <img src="img/scp2.jpg">
+                </a>
+                <a href="img/bcp3.jpg" title="image1">
+                <img src="img/scp3.jpg">
+                </a>
+                <a href="img/bcp4.jpg" title="image1">
+                <img src="img/scp4.jpg">
+                </a>
+            </div>
+        </div>
+        <div class="camtxt">
+                <h1>이용안내</h1>
+                <div class="camtextleft">
+                    <h2>위치</h2>
+                    <br>
+                    <p>리조트 야외 정원 (다목적 구장옆)</p>
+                    <br><br>
+                    <h2>운영시간 및 예약 시간</h2>
+                    <br>
+                    <p>Dinner : 18:00~22:00(이용일 하루 전 22시까지 예약)</p>
+                    <p>예약제 운영으로 조기 마감 될 수 있습니다.</p>
+                </div>
+                <div class="camtextright">
+                    <h2>위치</h2>
+                    <br>
+                    <p>리조트 야외 정원 (다목적 구장옆)</p>
+                    <br><br>
+                    <h2>운영시간 및 예약 시간</h2>
+                    <br>
+                    <p>Dinner : 18:00~22:00(이용일 하루 전 22시까지 예약)</p>
+                    <p>예약제 운영으로 조기 마감 될 수 있습니다.</p>
+                </div>
+            </div>
+            
+            <div class="back">
+                <div class="button_base b09_electric">문의하기</div>
+            </div>
+    </section>
+    <footer>
+        <div class="footerbox">
+            <div class="icon">
+                <a href="">
+                    <img src="img/papericon.png" alt="개인정보 처리(취급)방침">
+                    <span>개인정보 처리(취급)방침</span>
+                </a>
+                <a href="">
+                    <img src="img/emailicon.png" alt="이메일무단 수집금지">
+                    <span>이메일무단 수집금지</span>
+                </a>
+                <a href="">
+                    <img src="img/naviicon.png" alt="Contact us">
+                    <span>Contact us</span>
+                </a>
+                <a href="">
+                    <img src="img/facebookicon.png" alt="Facebook">
+                    <span>Facebook</span>
+                </a>
+                <a href="">
+                    <img src="img/twiter.png" alt="Twiter">
+                    <span>Twiter</span>
+                </a>
+                <a href="">
+                    <img src="img/instargramicon.png" alt="Instargram">
+                    <span>Instargram</span>
+                </a>
+            </div>
+            <p>주소:제주특별자치도서귀포시 표선면 민속해안로 537(우:63629)<br> 대표전화 Tel.(064)780-8100 Fax.(064)780-8524 객실 예약 제주(064)780-8000 단체견적문의 (02)-3669-4731/sales@haevichi.com<br><br>
+                <b>copyright &copy; Haevichi hotels &#38; Resorlsco.LTd.all Rights Reserved.</b>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
