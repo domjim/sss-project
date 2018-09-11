@@ -3,8 +3,8 @@ var app = express();
 
 app.use(express.static(__dirname + '/public'));
 
-app.get("/", function(req,res){
-  res.redirect("index");
+app.get("/1", function(req,res){
+  res.redirect("/project_1/index.html");
 });
 
 // Port setting
